@@ -459,6 +459,452 @@ void Lungime()
     }
 }
 
+/////////////////////////////////////////////////////////////
+float Meters2ToMM2(float meters)
+{
+    return meters / 1000000 ;
+}
+float Meters2ToCm2(float meters)
+{
+    return meters / 0.00010000;
+}
+float Meters2ToFt2(float meters)
+{
+    return meters * 10.764;
+}
+float Meters2ToInches2(float meters)
+{
+    return meters * 1550.0;
+}
+float Meters2ToKm2(float meters)
+{
+    return meters / 1000000;
+}
+float MM2ToInches2(float mm)
+{
+    return mm * 0.0015500;
+}
+float MM2toCm2(float mm)
+{
+    return mm / 10000;
+}
+float MM2toKm2(float mm)
+{
+    return mm / 1000000000000;
+}
+float MM2toFt2(float mm)
+{
+    return mm * 0.000010764;
+}
+float MM2toMeters2(float mm)
+{
+    return mm / 1000000;
+}
+float Cm2ToMeters2(float cm)
+{
+    return cm / 10000;
+}
+float Cm2ToInches2(float cm)
+{
+    return cm * 0.15500;
+}
+float Cm2ToFt2(float cm)
+{
+    return cm * 0.0010764;
+}
+float Cm2ToKm2(float cm)
+{
+    return cm / 10000000000;
+}
+float Cm2ToMM2(float cm)
+{
+    return cm / 0.010000;
+}
+float Inches2ToMM2(float inches)
+{
+    return inches / 0.0015500;
+}
+float Inches2ToCm2(float inches)
+{
+    return inches / 0.15500;
+}
+float Inches2ToFt2(float inches)
+{
+    return inches * 0.0069444;
+}
+float Inches2ToMeters2(float inches)
+{
+    return inches / 15500;
+}
+float Inches2ToKm2(float inches)
+{
+    return inches / 1550000000;
+}
+float Km2ToMM2(float km)
+{
+    return km / 0.000000000001;
+}
+float Km2ToCm2(float km)
+{
+    return km / 0.0000000001;
+}
+float Km2ToInches2(float km)
+{
+    return km * 1550000000;
+}
+float Km2ToFt2(float km)
+{
+    return km * 10764000;
+}
+float Km2ToMeters2(float km)
+{
+    return km / 0.0000010000;
+}
+float Ft2ToMeters2(float ft)
+{
+    return ft / 10.764;
+}
+float Ft2ToCm2(float ft)
+{
+    return ft / 0.0010764;
+}
+float Ft2ToMM2(float ft)
+{
+    return ft / 0.000010764;
+}
+float Ft2ToKm2(float ft)
+{
+    return ft / 10764000;
+}
+float Ft2ToInches2(float ft)
+{
+    return ft * 144;
+}
+
+void ConvertorMetrip()
+{
+    float meters;
+    int x;
+
+    cout<<"1 : "<<"Metri patrati -> Centimetri patrati"<<endl;
+    cout<<"2 : "<<"Metri patrati -> Milimetri patrati"<<endl;
+    cout<<"3 : "<<"Metri patrati -> Feet patrati"<<endl;
+    cout<<"4 : "<<"Metri patrati -> Kilometri patrati"<<endl;
+    cout<<"5 : "<<"Metri patrati -> Inch patrati"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>meters;
+        cout<<endl;
+        cout<<meters<<" metri patrati = "<<Meters2ToCm2(meters)<<" Centimetri patrati";
+        break;
+    case 2 :
+        cin>>meters;
+        cout<<endl;
+        cout<<meters<<" metri patrati = "<<Meters2ToMM2(meters)<<" Milimetri patrati";
+        break;
+    case 3 :
+        cin>>meters;
+        cout<<endl;
+        cout<<meters<<" metri patrati = "<<Meters2ToFt2(meters)<<" Feat patrati";
+        break;
+    case 4 :
+        cin>>meters;
+        cout<<endl;
+        cout<<meters<<" metri patrati = "<<Meters2ToKm2(meters)<<" Kilometri patrati";
+        break;
+    case 5 :
+        cin>>meters;
+        cout<<endl;
+        cout<<meters<<" metri patrati = "<<Meters2ToInches2(meters)<<" Inch patrati";
+        break;
+    }
+}
+void ConvertorMMp()
+{
+    float mm;
+    int x;
+
+    cout<<"1 : "<<"Milimetri patrati -> Feet patrati"<<endl;
+    cout<<"2 : "<<"Milimetri patrati -> Kilometri patrati"<<endl;
+    cout<<"3 : "<<"Milimetri patrati -> Inch patrati"<<endl;
+    cout<<"4 : "<<"Milimetri patrati -> Metri patrati"<<endl;
+    cout<<"5 : "<<"Milimetri patrati -> Centimetri patrati"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>mm;
+        cout<<endl;
+        cout<<mm<<" Milimetri patrati = "<<MM2toFt2(mm)<<" Feat patrati";
+        break;
+    case 2 :
+        cin>>mm;
+        cout<<endl;
+        cout<<mm<<" Milimetri patrati = "<<MM2toKm2(mm)<<" Kilometri patrati";
+        break;
+    case 3 :
+        cin>>mm;
+        cout<<endl;
+        cout<<mm<<" Milimetri patrati = "<<MM2ToInches2(mm)<<" Inch patrati";
+        break;
+    case 4 :
+        cin>>mm;
+        cout<<endl;
+        cout<<mm<<" Milimetri patrati = "<<MM2toMeters2(mm)<<" metri patrati";
+        break;
+    case 5 :
+        cin>>mm;
+        cout<<endl;
+        cout<<mm<<" Milimetri patrati = "<<MM2toCm2(mm)<<" Centimetri patrati";
+        break;
+
+    }
+
+}
+void ConvertorCmp()
+{
+    float cm;
+    int x;
+
+    cout<<"1 : "<<"Centimetri patrati -> Milimetri patrati"<<endl;
+    cout<<"2 : "<<"Centimetri patrati -> Feet patrati"<<endl;
+    cout<<"3 : "<<"Centimetri patrati -> Kilometri patrati"<<endl;
+    cout<<"4 : "<<"Centimetri patrati -> Inch patrati"<<endl;
+    cout<<"5 : "<<"Centimetri patrati -> Metri patrati"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>cm;
+        cout<<endl;
+        cout<<cm<<" Centimerii patrati = "<<Cm2ToMM2(cm)<<" Milimetri patrati";
+        break;
+    case 2 :
+        cin>>cm;
+        cout<<endl;
+        cout<<cm<<" Centimetri patrati = "<<Cm2ToFt2(cm)<<" Feat patrati";
+        break;
+    case 3 :
+        cin>>cm;
+        cout<<endl;
+        cout<<cm<<" Centimetri patrati = "<<Cm2ToKm2(cm)<<" Kilometri patrati";
+        break;
+    case 4 :
+        cin>>cm;
+        cout<<endl;
+        cout<<cm<<" Centimetri patrati = "<<Cm2ToInches2(cm)<<" Inches patrati";
+        break;
+    case 5 :
+        cin>>cm;
+        cout<<endl;
+        cout<<cm<<" Centimetri patrati = "<<Cm2ToMeters2(cm)<<" metri patrati";
+        break;
+
+    }
+
+}
+void ConvertorFtp()
+{
+    float ft;
+    int x;
+
+    cout<<"1 : "<<"Feet patrati -> Kilometri patrati"<<endl;
+    cout<<"2 : "<<"Feet patrati -> Inch patrati"<<endl;
+    cout<<"3 : "<<"Feet patrati -> Metri patrati"<<endl;
+    cout<<"4 : "<<"Feet patrati -> Centimetri patrati"<<endl;
+    cout<<"5 : "<<"Feet patrati -> Milimetri patrati"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>ft;
+        cout<<endl;
+        cout<<ft<<" Feat patrati = "<<Ft2ToKm2(ft)<<" Kilometri patrati";
+        break;
+    case 2 :
+        cin>>ft;
+        cout<<endl;
+        cout<<ft<<" Feat patrati = "<<Ft2ToInches2(ft)<<" Inch patrati";
+        break;
+    case 3 :
+        cin>>ft;
+        cout<<endl;
+        cout<<ft<<" Feat patrati = "<<Ft2ToMeters2(ft)<<" metri patrati";
+        break;
+    case 4 :
+        cin>>ft;
+        cout<<endl;
+        cout<<ft<<" Feat patrati = "<<Ft2ToCm2(ft)<<" Centimetri patrati";
+        break;
+    case 5 :
+        cin>>ft;
+        cout<<endl;
+        cout<<ft<<" Feat patrati = "<<Ft2ToInches2(ft)<<" Inch patrati";
+        break;
+
+    }
+
+}
+void ConvertorKmp()
+{
+    float km;
+    int x;
+    cout<<"1 : "<<"Kilometri patrati -> Inch patrati"<<endl;
+    cout<<"2 : "<<"Kilometri patrati -> Metri patrati"<<endl;
+    cout<<"3 : "<<"Kilometri patrati -> Centimetri patrati"<<endl;
+    cout<<"4 : "<<"Kilometri patrati -> Milimetri patrati"<<endl;
+    cout<<"5 : "<<"Kilometri patrati -> Feet patrati"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>km;
+        cout<<endl;
+        cout<<km<<" Kilometri patrati = "<<Km2ToInches2(km)<<" Inch patrati";
+        break;
+    case 2 :
+        cin>>km;
+        cout<<endl;
+        cout<<km<<" Kilometri patrati = "<<Km2ToMeters2(km)<<" metri patrati";
+        break;
+    case 3 :
+        cin>>km;
+        cout<<endl;
+        cout<<km<<" Kilometri patrati = "<<Km2ToCm2(km)<<" Centimetri patrati";
+        break;
+    case 4 :
+        cin>>km;
+        cout<<endl;
+        cout<<km<<" Kilometri patrati = "<<Km2ToMM2(km)<<" Milimetri patrati";
+        break;
+    case 5 :
+        cin>>km;
+        cout<<endl;
+        cout<<km<<" Kilometri patrati = "<<Km2ToFt2(km)<<" Feat patrati";
+        break;
+
+    }
+
+}
+void ConvertorInchp()
+{
+    float inch;
+    int x;
+
+    cout<<"1 : "<<"Inch patrati -> Metri patrati"<<endl;
+    cout<<"2 : "<<"Inch patrati -> Centimetri patrati"<<endl;
+    cout<<"3 : "<<"Inch patrati-> Milimetri patrati"<<endl;
+    cout<<"4 : "<<"Inch patrati-> Feet patrati"<<endl;
+    cout<<"5 : "<<"Inch patrati-> Kilometri patrati"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>inch;
+        cout<<endl;
+        cout<<inch<<" Inch patrati= "<<Inches2ToMeters2(inch)<<" metri patrati";
+        break;
+    case 2 :
+        cin>>inch;
+        cout<<endl;
+        cout<<inch<<" Inch patrati = "<<Inches2ToCm2(inch)<<" Centimetri patrati";
+        break;
+    case 3 :
+        cin>>inch;
+        cout<<endl;
+        cout<<inch<<" Inch patrati = "<<Inches2ToMM2(inch)<<" Milimetri patrati";
+        break;
+    case 4 :
+        cin>>inch;
+        cout<<endl;
+        cout<<inch<<" Inch patrati = "<<Inches2ToFt2(inch)<<" Feat patrati";
+        break;
+    case 5 :
+        cin>>inch;
+        cout<<endl;
+        cout<<inch<<" Inch patrati = "<<Inches2ToKm2(inch)<<" Kilometri patrati";
+        break;
+
+    }
+
+}
+
+
+void Arie()
+{
+    int x;
+    cout<<"1 : "<<"Convertor Metri patrati"<<endl;
+    cout<<"2 : "<<"Convertor Milimetri patrati"<<endl;
+    cout<<"3 : "<<"Convertor Centimetri patrati"<<endl;
+    cout<<"4 : "<<"Convertor Feet patrati"<<endl;
+    cout<<"5 : "<<"Convertor Kilometri patrati"<<endl;
+    cout<<"6 : "<<"Convertor Inch patrati"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+
+    switch(x)
+    {
+    case 1 :
+        system("cls");
+        ConvertorMetrip();
+        break;
+    case 2 :
+        system("cls");
+        ConvertorMMp();
+        break;
+    case 3 :
+        system("cls");
+        ConvertorCmp();
+        break;
+    case 4 :
+        system("cls");
+        ConvertorFtp();
+        break;
+    case 5 :
+        system("cls");
+        ConvertorKmp();
+        break;
+    case 6 :
+        system("cls");
+        ConvertorInchp();
+        break;
+    }
+
+}
 
 
 
@@ -709,6 +1155,7 @@ int main()
     int x;
 
     cout<<"1 : "<<"Convertor Lungime"<<endl;
+    cout<<"2 : "<<"Convertor Arie"<<endl;
     cout<<"6 : "<<"Convertor Temperatura"<<endl;
 
     cout<<endl;
@@ -720,7 +1167,10 @@ int main()
     case 1 :
         system("cls");
         Lungime();
-        //cout<<KmToCm(2);
+        break;
+    case 2:
+        system("cls");
+        Arie();
         break;
 
 
