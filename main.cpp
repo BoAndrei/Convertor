@@ -1468,7 +1468,6 @@ void ConvertorRankine()
 void Temperatura()
 {
     int x;
-    float celsius,kelvin,fahrenheit,rankine;
     cout<<"1 : "<<"Convertor Celsius"<<endl;
     cout<<"2 : "<<"Convertor Kelvin"<<endl;
     cout<<"3 : "<<"Convertor Fahrenheit"<<endl;
@@ -1498,8 +1497,280 @@ void Temperatura()
         break;
     }
 }
+/////////////////////////////////////////////////
+long GrToKg(long gr)
+{
+    return gr / 1000;
+}
+long GrToT(long gr)
+{
+    return gr / 1000000;
+}
+long KgToGr(long kg)
+{
+    return kg * 1000;
+}
+long KgToT(long kg)
+{
+    return kg / 100;
+}
+long TToGr(long t)
+{
+    return t * 1000000;
+}
+long TToKg(long t)
+{
+    return t * 1000;
+}
+
+void ConvertorGrame()
+{
+    int x;
+    float gr;
+
+    cout<<"1 : "<<"Grame -> Kilograme"<<endl;
+    cout<<"2 : "<<"Grame -> Tone"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>gr;
+        cout<<endl;
+        cout<<gr<<" Grame = "<<GrToKg(gr)<<" Kilograme";
+        break;
+    case 2 :
+        cin>>gr;
+        cout<<endl;
+        cout<<gr<<" Grame = "<<GrToT(gr)<<" Tone";
+        break;
+    }
+
+}
+void ConvertorKilograme()
+{
+    int x;
+    float kg;
+
+    cout<<"1 : "<<"Kilograme -> Grame"<<endl;
+    cout<<"2 : "<<"Kilograme -> Tone"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>kg;
+        cout<<endl;
+        cout<<kg<<" Kilograme = "<<KgToGr(kg)<<" Grame";
+        break;
+    case 2 :
+        cin>>kg;
+        cout<<endl;
+        cout<<kg<<" Kilograme = "<<KgToT(kg)<<" Tone";
+        break;
+    }
+}
+void ConvertorTone()
+{
+    int x;
+    float t;
+
+    cout<<"1 : "<<"Tone -> Grame"<<endl;
+    cout<<"2 : "<<"Tone -> Kilograme"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>t;
+        cout<<endl;
+        cout<<t<<" Tone = "<<TToGr(t)<<" Grame";
+        break;
+    case 2 :
+        cin>>t;
+        cout<<endl;
+        cout<<t<<" Tone = "<<TToKg(t)<<" Kilograme";
+        break;
+    }
+}
+
+void Masa()
+{
+    int x;
+    cout<<"1 : "<<"Convertor Grame"<<endl;
+    cout<<"2 : "<<"Convertor Kilograme"<<endl;
+    cout<<"3 : "<<"Convertor Tone"<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
 
 
+    switch(x)
+    {
+    case 1 :
+        system("cls");
+        ConvertorGrame();
+        break;
+    case 2 :
+        system("cls");
+        ConvertorKilograme();
+        break;
+    case 3 :
+        system("cls");
+        ConvertorTone();
+        break;
+    }
+
+}
+/////////////////////////////////////////////////
+float CalToJoule(float cal)
+{
+    return cal * 4.184;
+}
+float CalToWatt(float cal)
+{
+    return cal * 0.001163;
+}
+float JouleToCal(float joule)
+{
+    return joule / 4.184;
+}
+float JouleToWatt(float joule)
+{
+    return joule / 3600;
+}
+float WattToCal(float watt)
+{
+    return watt * 859.8452278589854;
+}
+float WattToJoule(float watt)
+{
+    return watt * 3600;
+}
+
+void ConvertorCalorie()
+{
+    int x;
+    float cal;
+
+    cout<<"1 : "<<"Calorii -> Joule"<<endl;
+    cout<<"2 : "<<"Calorii -> Watt (ora)"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>cal;
+        cout<<endl;
+        cout<<cal<<" Calorii = "<<CalToJoule(cal)<<" Joule";
+        break;
+    case 2 :
+        cin>>cal;
+        cout<<endl;
+        cout<<cal<<" Calorii = "<<CalToWatt(cal)<<" Watt (ora)";
+        break;
+    }
+
+}
+void ConvertorJoule()
+{
+    int x;
+    float joule;
+
+    cout<<"1 : "<<"Joule -> Calorii"<<endl;
+    cout<<"2 : "<<"Joule -> Watt (ora)"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>joule;
+        cout<<endl;
+        cout<<joule<<" Calorii = "<<CalToJoule(joule)<<" Joule";
+        break;
+    case 2 :
+        cin>>joule;
+        cout<<endl;
+        cout<<joule<<" Calorii = "<<CalToWatt(joule)<<" Watt (ora)";
+        break;
+    }
+}
+void ConvertorWatt()
+{
+    int x;
+    float watt;
+
+    cout<<"1 : "<<"Watt (ora) -> Calorii"<<endl;
+    cout<<"2 : "<<"Watt (ora) -> Joule"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>watt;
+        cout<<endl;
+        cout<<watt<<" Watt (ora) = "<<WattToCal(watt)<<" Calorii";
+        break;
+    case 2 :
+        cin>>watt;
+        cout<<endl;
+        cout<<watt<<" Watt (ora) = "<<WattToJoule(watt)<<" Joule";
+        break;
+    }
+}
+
+void Energie()
+{
+    int x;
+    cout<<"1 : "<<"Convertor Calorie"<<endl;
+    cout<<"2 : "<<"Convertor Joule"<<endl;
+    cout<<"3 : "<<"Convertor Watt ora"<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+
+
+    switch(x)
+    {
+    case 1 :
+        system("cls");
+        ConvertorCalorie();
+        break;
+    case 2 :
+        system("cls");
+        ConvertorJoule();
+        break;
+    case 3 :
+        system("cls");
+        ConvertorWatt();
+        break;
+    }
+
+}
 /////////////////////////////////////////////////
 float BarToPsi(float bar)
 {
@@ -1509,7 +1780,6 @@ float PsiToBar(float psi)
 {
     return psi * 0.0689475728 ;
 }
-
 void ConvertorBar()
 {
     float bar;
@@ -1561,6 +1831,8 @@ int main()
     cout<<"4 : "<<"Convertor Timp"<<endl;
     cout<<"5 : "<<"Convertor Viteza"<<endl;
     cout<<"6 : "<<"Convertor Temperatura"<<endl;
+    cout<<"7 : "<<"Convertor Masa"<<endl;
+    cout<<"8 : "<<"Convertor Energie"<<endl;
     cout<<"9 : "<<"Convertor Presiune"<<endl;
 
     cout<<endl;
@@ -1589,7 +1861,14 @@ int main()
         system("cls");
         Temperatura();
         break;
-
+    case 7 :
+        system("cls");
+        Masa();
+        break;
+    case 8 :
+        system("cls");
+        Energie();
+        break;
     case 9 :
         system("cls");
         Presiune();
