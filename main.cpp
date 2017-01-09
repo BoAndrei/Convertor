@@ -905,7 +905,229 @@ void Arie()
     }
 
 }
+/////////////////////////////////////////////////////////////
 
+float SecToMin(float sec)
+{
+    return sec / 60;
+}
+float SecToHour(float sec)
+{
+    return sec / 3600;
+}
+float SecToDay(float sec)
+{
+    return sec / (3600*24);
+}
+float MinToSec(float min)
+{
+    return min *60;
+}
+float MinToHour(float min)
+{
+    return min / 60 ;
+}
+float MinToDay(float min)
+{
+    return min / (60*24);
+}
+float HourToSec(float hour)
+{
+    return hour * 3600;
+}
+float HourToMin(float hour)
+{
+    return hour * 60;
+}
+float HourToDay(float hour)
+{
+    return hour / 24;
+}
+float DayToSec(float day)
+{
+    return day * (3600*24);
+}
+float DayToMin(float day)
+{
+    return day * (60*24);
+}
+float DayToHour(float day)
+{
+    return day * 24;
+}
+
+void ConvertorSecunde()
+{
+    int x;
+    float sec;
+
+    cout<<"1 : "<<"Secunde -> Minute"<<endl;
+    cout<<"2 : "<<"Secunde -> Ore"<<endl;
+    cout<<"3 : "<<"Secunde -> Zile"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+        case 1 :
+        cin>>sec;
+        cout<<endl;
+        cout<<sec<<" Secunde = "<<SecToMin(sec)<<" Minute";
+        break;
+    case 2 :
+        cin>>sec;
+        cout<<endl;
+        cout<<sec<<" Secunde = "<<SecToHour(sec)<<" Ore";
+        break;
+    case 3 :
+        cin>>sec;
+        cout<<endl;
+        cout<<sec<<" Secunde = "<<SecToDay(sec)<<" Zile";
+        break;
+    }
+
+
+}
+
+void ConvertorMinute()
+{
+    int x;
+    float min;
+
+    cout<<"1 : "<<"Minute -> Secunde"<<endl;
+    cout<<"2 : "<<"Minute -> Ore"<<endl;
+    cout<<"3 : "<<"Minute -> Zile"<<endl;
+
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+        case 1 :
+        cin>>min;
+        cout<<endl;
+        cout<<min<<" Minute = "<<MinToSec(min)<<" Secunde";
+        break;
+    case 2 :
+        cin>>min;
+        cout<<endl;
+        cout<<min<<" Minute = "<<MinToHour(min)<<" Ore";
+        break;
+    case 3 :
+        cin>>min;
+        cout<<endl;
+        cout<<min<<" Minute = "<<MinToDay(min)<<" Zile";
+        break;
+    }
+}
+void ConvertorOre()
+{
+    int x;
+    float hour;
+
+    cout<<"1 : "<<"Ore -> Secunde"<<endl;
+    cout<<"2 : "<<"Ore -> Minute"<<endl;
+    cout<<"3 : "<<"Ore -> Zile"<<endl;
+
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+        case 1 :
+        cin>>hour;
+        cout<<endl;
+        cout<<hour<<" Ore = "<<HourToSec(hour)<<" Secunde";
+        break;
+    case 2 :
+        cin>>hour;
+        cout<<endl;
+        cout<<hour<<" Ore = "<<HourToMin(hour)<<" Minute";
+        break;
+    case 3 :
+        cin>>hour;
+        cout<<endl;
+        cout<<hour<<" Ore = "<<HourToDay(hour)<<" Zile";
+        break;
+    }
+}
+
+void ConvertorZile()
+{
+    int x;
+    float day;
+
+    cout<<"1 : "<<"Zile -> Secunde"<<endl;
+    cout<<"2 : "<<"Zile -> Minute"<<endl;
+    cout<<"3 : "<<"Zile -> Ore"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+        case 1 :
+        cin>>day;
+        cout<<endl;
+        cout<<day<<" Zile = "<<DayToSec(day)<<" Secunde";
+        break;
+    case 2 :
+        cin>>day;
+        cout<<endl;
+        cout<<day<<" Zile = "<<DayToMin(day)<<" Minute";
+        break;
+    case 3 :
+        cin>>day;
+        cout<<endl;
+        cout<<day<<" Zile = "<<DayToHour(day)<<" Ore";
+        break;
+    }
+}
+
+void Timp()
+{
+    int x;
+    cout<<"1 : "<<"Convertor Secunde"<<endl;
+    cout<<"2 : "<<"Convertor Minute"<<endl;
+    cout<<"3 : "<<"Convertor Ore"<<endl;
+    cout<<"4 : "<<"Convertor Zile"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+
+    switch(x)
+    {
+    case 1 :
+        system("cls");
+        ConvertorSecunde();
+        break;
+    case 2 :
+        system("cls");
+        ConvertorMinute();
+        break;
+    case 3 :
+        system("cls");
+        ConvertorOre();
+        break;
+    case 4 :
+        system("cls");
+        ConvertorZile();
+        break;
+    }
+
+}
 
 
 /////////////////////////////////////////////////////////////
@@ -1156,6 +1378,7 @@ int main()
 
     cout<<"1 : "<<"Convertor Lungime"<<endl;
     cout<<"2 : "<<"Convertor Arie"<<endl;
+    cout<<"4 : "<<"Convertor Timp"<<endl;
     cout<<"6 : "<<"Convertor Temperatura"<<endl;
 
     cout<<endl;
@@ -1171,6 +1394,10 @@ int main()
     case 2:
         system("cls");
         Arie();
+        break;
+    case 4:
+        system("cls");
+        Timp();
         break;
 
 
