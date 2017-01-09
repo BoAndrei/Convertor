@@ -1128,7 +1128,141 @@ void Timp()
     }
 
 }
+/////////////////////////////////////////////////////////////
+float KmhToMph(float kmh)
+{
+    return kmh / 1.609344;
+}
+float KmhToMs(float kmh)
+{
+    return kmh / 3.6;
+}
+float MphToMs(float mph)
+{
+    return mph * 0.44704;
+}
+float MphToKmh(float mph)
+{
+    return mph * 1.609344;
+}
+float MsToMph(float ms)
+{
+    return ms * 2.237;
+}
+float MsToKmh(float ms)
+{
+    return ms * 3.6;
+}
 
+void ConvertorKmh()
+{
+    int x;
+    float kmh;
+
+    cout<<"1 : "<<"km/h -> mph"<<endl;
+    cout<<"2 : "<<"km/h -> m/s"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+        case 1 :
+        cin>>kmh;
+        cout<<endl;
+        cout<<kmh<<" km/h = "<<KmhToMph(kmh)<<" mph";
+        break;
+    case 2 :
+        cin>>kmh;
+        cout<<endl;
+        cout<<kmh<<" km/h = "<<KmhToMs(kmh)<<" m/s";
+        break;
+    }
+}
+void ConvertorMs()
+{
+    int x;
+    float ms;
+
+    cout<<"1 : "<<"m/s -> km/h"<<endl;
+    cout<<"2 : "<<"m/s -> mph"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+        case 1 :
+        cin>>ms;
+        cout<<endl;
+        cout<<ms<<" m/s = "<<MsToKmh(ms)<<" km/h";
+        break;
+    case 2 :
+        cin>>ms;
+        cout<<endl;
+        cout<<ms<<" m/s = "<<MsToMph(ms)<<" mps";
+        break;
+    }
+}
+void ConvertorMph()
+{
+    int x;
+    float mph;
+
+    cout<<"1 : "<<"mph -> km/h"<<endl;
+    cout<<"2 : "<<"mph -> m/s"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+        case 1 :
+        cin>>mph;
+        cout<<endl;
+        cout<<mph<<" mph = "<<MphToKmh(mph)<<" km/h";
+        break;
+    case 2 :
+        cin>>mph;
+        cout<<endl;
+        cout<<mph<<" mph = "<<MphToMs(mph)<<" m/s";
+        break;
+    }
+}
+
+void Viteza()
+{
+    int x;
+    cout<<"1 : "<<"Convertor km/h"<<endl;
+    cout<<"2 : "<<"Convertor mph"<<endl;
+    cout<<"3 : "<<"Convertor m/s"<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+
+
+    switch(x)
+    {
+    case 1 :
+        system("cls");
+        ConvertorKmh();
+        break;
+    case 2 :
+        system("cls");
+        ConvertorMph();
+        break;
+    case 3 :
+        system("cls");
+        ConvertorMs();
+        break;
+}
+}
 
 /////////////////////////////////////////////////////////////
 
@@ -1202,7 +1336,7 @@ void ConvertorCelsius()
     cout<<"3 : "<<"Celsius -> Rankine"<<endl;
 
     cout<<"Operatia Dorita: ";
-    cin>>x;;
+    cin>>x;
     cout<<"Dati valoarea: ";
 
     switch(x)
@@ -1236,7 +1370,7 @@ void ConvertorKelvin()
     cout<<endl;
 
     cout<<"Operatia Dorita: ";
-    cin>>x;;
+    cin>>x;
     cout<<"Dati valoarea: ";
 
     switch(x)
@@ -1273,7 +1407,7 @@ void ConvertorFahrenheit()
     cout<<endl;
 
     cout<<"Operatia Dorita: ";
-    cin>>x;;
+    cin>>x;
     cout<<"Dati valoarea: ";
 
     switch(x)
@@ -1306,7 +1440,7 @@ void ConvertorRankine()
     cout<<endl;
 
     cout<<"Operatia Dorita: ";
-    cin>>x;;
+    cin>>x;
     cout<<"Dati valoarea: ";
 
     switch(x)
@@ -1341,7 +1475,7 @@ void Temperatura()
     cout<<"4 : "<<"Convertor Rankine"<<endl;
 
     cout<<"Operatia Dorita: ";
-    cin>>x;;
+    cin>>x;
 
 
     switch(x)
@@ -1366,6 +1500,52 @@ void Temperatura()
 }
 
 
+/////////////////////////////////////////////////
+float BarToPsi(float bar)
+{
+    return bar * 14.5038;
+}
+float PsiToBar(float psi)
+{
+    return psi * 0.0689475728 ;
+}
+
+void ConvertorBar()
+{
+    float bar;
+
+        cout<<"Dati valoarea: ";cin>>bar;
+        cout<<endl;
+        cout<<bar<<" Bar = "<<BarToPsi(bar)<<" Psi";
+}
+void ConvertorPsi()
+{
+    float psi;
+
+        cout<<"Dati valoarea: ";cin>>psi;
+        cout<<endl;
+        cout<<psi<<" Psi = "<<PsiToBar(psi)<<" Bar";
+}
+void Presiune()
+{
+    int x;
+    cout<<"1 : "<<"Convertor Bar -> Psi"<<endl;
+    cout<<"2 : "<<"Convertor Psi -> Bar"<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+
+
+    switch(x)
+    {
+    case 1 :
+        ConvertorBar();
+        break;
+    case 2 :
+        ConvertorPsi();
+        break;
+    }
+}
 
 
 
@@ -1379,7 +1559,9 @@ int main()
     cout<<"1 : "<<"Convertor Lungime"<<endl;
     cout<<"2 : "<<"Convertor Arie"<<endl;
     cout<<"4 : "<<"Convertor Timp"<<endl;
+    cout<<"5 : "<<"Convertor Viteza"<<endl;
     cout<<"6 : "<<"Convertor Temperatura"<<endl;
+    cout<<"9 : "<<"Convertor Presiune"<<endl;
 
     cout<<endl;
     cout<<"Operatia Dorita: ";
@@ -1399,11 +1581,18 @@ int main()
         system("cls");
         Timp();
         break;
-
-
+    case 5 :
+        system("cls");
+        Viteza();
+        break;
     case 6 :
         system("cls");
         Temperatura();
+        break;
+
+    case 9 :
+        system("cls");
+        Presiune();
         break;
 
     }
