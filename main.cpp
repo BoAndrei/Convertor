@@ -1,134 +1,137 @@
 #include <iostream>
 #include <stdlib.h>
 #include <conio.h>
+#include <string.h>
+#include <iomanip>
 
 
 using namespace std;
+int ok;
 
-float MetersToMM(float meters)
+double MetersToMM(double meters)
 {
     return meters * 1000;
 }
-float MetersToCm(float meters)
+double MetersToCm(double meters)
 {
     return meters * 100;
 }
-float MetersToFt(float meters)
+double MetersToFt(double meters)
 {
     return meters /0.3048;
 }
-float MetersToInches(float meters)
+double MetersToInches(double meters)
 {
     return meters / 0.0254;
 }
-float MetersToKm(float meters)
+double MetersToKm(double meters)
 {
     return meters / 1000;
 }
-float MMToInches(float mm)
+double MMToInches(double mm)
 {
     return mm * 0.039370;
 }
-float MMtoCm(float mm)
+double MMtoCm(double mm)
 {
     return mm / 10;
 }
-float MMtoKm(float mm)
+double MMtoKm(double mm)
 {
     return mm / 1000000;
 }
-float MMtoFt(float mm)
+double MMtoFt(double mm)
 {
     return mm * 0.0032808;
 }
-float MMtoMeters(float mm)
+double MMtoMeters(double mm)
 {
     return mm / 1000;
 }
-float CmToMeters(float cm)
+double CmToMeters(double cm)
 {
     return cm / 100;
 }
-float CmToInches(float cm)
+double CmToInches(double cm)
 {
     return cm * 0.39370;
 }
-float CmToFt(float cm)
+double CmToFt(double cm)
 {
     return cm * 0.032808;
 }
-float CmToKm(float cm)
+double CmToKm(double cm)
 {
     return cm / 100000;
 }
-float CmToMM(float cm)
+double CmToMM(double cm)
 {
     return cm / 100;
 }
-float InchesToMM(float inches)
+double InchesToMM(double inches)
 {
     return inches / 0.039370;
 }
-float InchesToCm(float inches)
+double InchesToCm(double inches)
 {
     return inches / 0.39370;
 }
-float InchesToFt(float inches)
+double InchesToFt(double inches)
 {
     return inches * 0.083333;
 }
-float InchesToMeters(float inches)
+double InchesToMeters(double inches)
 {
     return inches / 0.039370;
 }
-float InchesToKm(float inches)
+double InchesToKm(double inches)
 {
     return inches / 39370;
 }
-float KmToMM(float km)
+double KmToMM(double km)
 {
     return km / 0.000001;
 }
-float KmToCm(float km)
+double KmToCm(double km)
 {
     return km / 0.00001;
 }
-float KmToInches(float km)
+double KmToInches(double km)
 {
     return km * 39370;
 }
-float KmToFt(float km)
+double KmToFt(double km)
 {
     return km / 0.00001;
 }
-float KmToMeters(float km)
+double KmToMeters(double km)
 {
     return km / 0.00001;
 }
-float FtToMeters(float ft)
+double FtToMeters(double ft)
 {
     return ft / 0.00001;
 }
-float FtToCm(float ft)
+double FtToCm(double ft)
 {
     return ft / 0.00001;
 }
-float FtToMM(float ft)
+double FtToMM(double ft)
 {
     return ft / 0.00001;
 }
-float FtToKm(float ft)
+double FtToKm(double ft)
 {
     return ft / 0.00001;
 }
-float FtToInches(float ft)
+double FtToInches(double ft)
 {
     return ft / 0.00001;
 }
 
 void ConvertorMetri()
 {
-    float meters;
+    double meters;
     int x;
 
     cout<<"1 : "<<"Metri -> Centimetri"<<endl;
@@ -174,7 +177,7 @@ void ConvertorMetri()
 
 void ConvertorCm()
 {
-    float cm;
+    double cm;
     int x;
 
     cout<<"1 : "<<"Centimetri -> Milimetri"<<endl;
@@ -222,7 +225,7 @@ void ConvertorCm()
 void ConvertorMM()
 {
 
-    float mm;
+    double mm;
     int x;
 
     cout<<"1 : "<<"Milimetri -> Feet"<<endl;
@@ -270,7 +273,7 @@ void ConvertorMM()
 void ConvertorFt()
 {
 
-    float ft;
+    double ft;
     int x;
 
     cout<<"1 : "<<"Feet -> Kilometri"<<endl;
@@ -317,7 +320,7 @@ void ConvertorFt()
 void ConvertorKm()
 {
 
-    float km;
+    double km;
     int x;
     cout<<"1 : "<<"Kilometri -> Inch"<<endl;
     cout<<"2 : "<<"Kilometri -> Metri"<<endl;
@@ -364,7 +367,7 @@ void ConvertorKm()
 void ConvertorInch()
 {
 
-    float inch;
+    double inch;
     int x;
 
     cout<<"1 : "<<"Inch -> Metri"<<endl;
@@ -418,7 +421,6 @@ void ConvertorInch()
 void Lungime()
 {
     int x;
-    float meters,cm,mm,ft,km,inch;
     cout<<"1 : "<<"Convertor Metri"<<endl;
     cout<<"2 : "<<"Convertor Milimetri"<<endl;
     cout<<"3 : "<<"Convertor Centimetri"<<endl;
@@ -460,130 +462,130 @@ void Lungime()
 }
 
 /////////////////////////////////////////////////////////////
-float Meters2ToMM2(float meters)
+double Meters2ToMM2(double meters)
 {
     return meters / 1000000 ;
 }
-float Meters2ToCm2(float meters)
+double Meters2ToCm2(double meters)
 {
     return meters / 0.00010000;
 }
-float Meters2ToFt2(float meters)
+double Meters2ToFt2(double meters)
 {
     return meters * 10.764;
 }
-float Meters2ToInches2(float meters)
+double Meters2ToInches2(double meters)
 {
     return meters * 1550.0;
 }
-float Meters2ToKm2(float meters)
+double Meters2ToKm2(double meters)
 {
     return meters / 1000000;
 }
-float MM2ToInches2(float mm)
+double MM2ToInches2(double mm)
 {
     return mm * 0.0015500;
 }
-float MM2toCm2(float mm)
+double MM2toCm2(double mm)
 {
     return mm / 10000;
 }
-float MM2toKm2(float mm)
+double MM2toKm2(double mm)
 {
     return mm / 1000000000000;
 }
-float MM2toFt2(float mm)
+double MM2toFt2(double mm)
 {
     return mm * 0.000010764;
 }
-float MM2toMeters2(float mm)
+double MM2toMeters2(double mm)
 {
     return mm / 1000000;
 }
-float Cm2ToMeters2(float cm)
+double Cm2ToMeters2(double cm)
 {
     return cm / 10000;
 }
-float Cm2ToInches2(float cm)
+double Cm2ToInches2(double cm)
 {
     return cm * 0.15500;
 }
-float Cm2ToFt2(float cm)
+double Cm2ToFt2(double cm)
 {
     return cm * 0.0010764;
 }
-float Cm2ToKm2(float cm)
+double Cm2ToKm2(double cm)
 {
     return cm / 10000000000;
 }
-float Cm2ToMM2(float cm)
+double Cm2ToMM2(double cm)
 {
     return cm / 0.010000;
 }
-float Inches2ToMM2(float inches)
+double Inches2ToMM2(double inches)
 {
     return inches / 0.0015500;
 }
-float Inches2ToCm2(float inches)
+double Inches2ToCm2(double inches)
 {
     return inches / 0.15500;
 }
-float Inches2ToFt2(float inches)
+double Inches2ToFt2(double inches)
 {
     return inches * 0.0069444;
 }
-float Inches2ToMeters2(float inches)
+double Inches2ToMeters2(double inches)
 {
     return inches / 15500;
 }
-float Inches2ToKm2(float inches)
+double Inches2ToKm2(double inches)
 {
     return inches / 1550000000;
 }
-float Km2ToMM2(float km)
+double Km2ToMM2(double km)
 {
     return km / 0.000000000001;
 }
-float Km2ToCm2(float km)
+double Km2ToCm2(double km)
 {
     return km / 0.0000000001;
 }
-float Km2ToInches2(float km)
+double Km2ToInches2(double km)
 {
     return km * 1550000000;
 }
-float Km2ToFt2(float km)
+double Km2ToFt2(double km)
 {
     return km * 10764000;
 }
-float Km2ToMeters2(float km)
+double Km2ToMeters2(double km)
 {
     return km / 0.0000010000;
 }
-float Ft2ToMeters2(float ft)
+double Ft2ToMeters2(double ft)
 {
     return ft / 10.764;
 }
-float Ft2ToCm2(float ft)
+double Ft2ToCm2(double ft)
 {
     return ft / 0.0010764;
 }
-float Ft2ToMM2(float ft)
+double Ft2ToMM2(double ft)
 {
     return ft / 0.000010764;
 }
-float Ft2ToKm2(float ft)
+double Ft2ToKm2(double ft)
 {
     return ft / 10764000;
 }
-float Ft2ToInches2(float ft)
+double Ft2ToInches2(double ft)
 {
     return ft * 144;
 }
 
 void ConvertorMetrip()
 {
-    float meters;
+    double meters;
     int x;
 
     cout<<"1 : "<<"Metri patrati -> Centimetri patrati"<<endl;
@@ -603,6 +605,7 @@ void ConvertorMetrip()
         cin>>meters;
         cout<<endl;
         cout<<meters<<" metri patrati = "<<Meters2ToCm2(meters)<<" Centimetri patrati";
+
         break;
     case 2 :
         cin>>meters;
@@ -628,7 +631,7 @@ void ConvertorMetrip()
 }
 void ConvertorMMp()
 {
-    float mm;
+    double mm;
     int x;
 
     cout<<"1 : "<<"Milimetri patrati -> Feet patrati"<<endl;
@@ -675,7 +678,7 @@ void ConvertorMMp()
 }
 void ConvertorCmp()
 {
-    float cm;
+    double cm;
     int x;
 
     cout<<"1 : "<<"Centimetri patrati -> Milimetri patrati"<<endl;
@@ -722,7 +725,7 @@ void ConvertorCmp()
 }
 void ConvertorFtp()
 {
-    float ft;
+    double ft;
     int x;
 
     cout<<"1 : "<<"Feet patrati -> Kilometri patrati"<<endl;
@@ -769,7 +772,7 @@ void ConvertorFtp()
 }
 void ConvertorKmp()
 {
-    float km;
+    double km;
     int x;
     cout<<"1 : "<<"Kilometri patrati -> Inch patrati"<<endl;
     cout<<"2 : "<<"Kilometri patrati -> Metri patrati"<<endl;
@@ -815,7 +818,7 @@ void ConvertorKmp()
 }
 void ConvertorInchp()
 {
-    float inch;
+    double inch;
     int x;
 
     cout<<"1 : "<<"Inch patrati -> Metri patrati"<<endl;
@@ -907,51 +910,278 @@ void Arie()
 }
 /////////////////////////////////////////////////////////////
 
-float SecToMin(float sec)
+double LitToMetr3(double lit)
+{
+    return lit / 1000;
+}
+double LitToDL(double lit)
+{
+    return lit * 10;
+}
+double LitToMiL(double lit)
+{
+    return lit * 1000;
+}
+
+double DLtoLit(double dl)
+{
+    return dl / 10;
+}
+double DLtoMiL(double dl)
+{
+    return dl * 100;
+}
+double DLtoMetr3(double dl)
+{
+    return dl / 100;
+}
+double MiLtoLit(double mil)
+{
+    return mil / 100;
+}
+double MiLtoDL(double mil)
+{
+    return mil / 100;
+}
+
+double MiLtoMetr3(double mil)
+{
+    return mil / 100000;
+}
+double Metr3ToLit(double m3)
+{
+    return m3 * 1000;
+}
+double Metr3ToDL(double m3)
+{
+    return m3 * 10000;
+}
+double Metr3MiL(double m3)
+{
+    return m3 * 1000000;
+}
+
+
+
+
+void ConvertorLitru()
+{
+    double lit;
+    int x;
+
+    cout<<"1 : "<<"Litru -> Metri cubi"<<endl;
+    cout<<"2 : "<<"Litru -> DeciLitru"<<endl;
+    cout<<"3 : "<<"Litru-> MiliLitru"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>lit;
+        cout<<endl;
+        cout<<lit<<" Litri = "<<LitToDL(lit)<<" DeciLitri";
+        break;
+    case 2 :
+        cin>>lit;
+        cout<<endl;
+        cout<<lit<<" Litri = "<<LitToMetr3(lit)<<" Metri cub";
+        break;
+    case 3 :
+        cin>>lit;
+        cout<<endl;
+        cout<<lit<<" Litri = "<<LitToMiL(lit)<<" MiliLitri";
+        break;
+}
+}
+void ConvertorDeciLitru()
+{
+
+    double dl;
+    int x;
+
+    cout<<"1 : "<<"DeciLitru -> Litru"<<endl;
+    cout<<"2 : "<<"DeciLitru -> Metru cub"<<endl;
+    cout<<"3 : "<<"DeciLitru-> MiliLitru"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>dl;
+        cout<<endl;
+        cout<<dl<<" DeciLitri = "<<DLtoLit(dl)<<" Litru";
+        break;
+    case 2 :
+        cin>>dl;
+        cout<<endl;
+        cout<<dl<<" DeciLitri = "<<DLtoMetr3(dl)<<" Metri cub";
+        break;
+    case 3 :
+        cin>>dl;
+        cout<<endl;
+        cout<<dl<<" DeciLitri = "<<DLtoMiL(dl)<<" MiliLitri";
+        break;
+}
+}
+void ConvertorMiliLitru()
+{
+    double mil;
+    int x;
+
+    cout<<"1 : "<<"MiliLitru -> Litru"<<endl;
+    cout<<"2 : "<<"MiliLitru -> Metru cub"<<endl;
+    cout<<"3 : "<<"MiliLitru -> DeciLitru"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>mil;
+        cout<<endl;
+        cout<<mil<<" MiliLitri = "<<MiLtoLit(mil)<<" Litru";
+        break;
+    case 2 :
+        cin>>mil;
+        cout<<endl;
+        cout<<mil<<" MiliLitri = "<<MiLtoMetr3(mil)<<" Metri cub";
+        break;
+    case 3 :
+        cin>>mil;
+        cout<<endl;
+        cout<<mil<<" MiliLitri = "<<MiLtoDL(mil)<<" DeciLitri";
+        break;
+}
+}
+void ConvertorMetruCub()
+{
+    double m3;
+    int x;
+
+    cout<<"1 : "<<"Metri cub -> Litru"<<endl;
+    cout<<"2 : "<<"Metri cub -> MiliLitri"<<endl;
+    cout<<"3 : "<<"Metri cub -> DeciLitru"<<endl;
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>m3;
+        cout<<endl;
+        cout<<m3<<" Metri cub = "<<MiLtoLit(m3)<<" Litru";
+        break;
+    case 2 :
+        cin>>m3;
+        cout<<endl;
+        cout<<m3<<" Metri cub = "<<MiLtoMetr3(m3)<<" MiliLitri";
+        break;
+    case 3 :
+        cin>>m3;
+        cout<<endl;
+        cout<<m3<<" Metri cub = "<<MiLtoDL(m3)<<" DeciLitri";
+        break;
+}
+}
+
+
+void Volum()
+{
+
+
+int x;
+    cout<<"1 : "<<"Convertor Litri"<<endl;
+    cout<<"2 : "<<"Convertor DeciLitri"<<endl;
+    cout<<"3 : "<<"Convertor MiliLitri"<<endl;
+    cout<<"4 : "<<"Convertor Metri cubi"<<endl;
+
+    cout<<endl;
+
+    cout<<"Operatia Dorita: ";
+    cin>>x;
+
+    switch(x)
+    {
+    case 1 :
+        system("cls");
+        ConvertorLitru();
+        break;
+    case 2 :
+        system("cls");
+        ConvertorDeciLitru();
+        break;
+    case 3 :
+        system("cls");
+        ConvertorMiliLitru();
+        break;
+    case 4 :
+        system("cls");
+        ConvertorMetruCub();
+        break;
+    }
+
+}
+
+/////////////////////////////////////////////////////////////
+double SecToMin(double sec)
 {
     return sec / 60;
 }
-float SecToHour(float sec)
+double SecToHour(double sec)
 {
     return sec / 3600;
 }
-float SecToDay(float sec)
+double SecToDay(double sec)
 {
     return sec / (3600*24);
 }
-float MinToSec(float min)
+double MinToSec(double min)
 {
     return min *60;
 }
-float MinToHour(float min)
+double MinToHour(double min)
 {
     return min / 60 ;
 }
-float MinToDay(float min)
+double MinToDay(double min)
 {
     return min / (60*24);
 }
-float HourToSec(float hour)
+double HourToSec(double hour)
 {
     return hour * 3600;
 }
-float HourToMin(float hour)
+double HourToMin(double hour)
 {
     return hour * 60;
 }
-float HourToDay(float hour)
+double HourToDay(double hour)
 {
     return hour / 24;
 }
-float DayToSec(float day)
+double DayToSec(double day)
 {
     return day * (3600*24);
 }
-float DayToMin(float day)
+double DayToMin(double day)
 {
     return day * (60*24);
 }
-float DayToHour(float day)
+double DayToHour(double day)
 {
     return day * 24;
 }
@@ -959,7 +1189,7 @@ float DayToHour(float day)
 void ConvertorSecunde()
 {
     int x;
-    float sec;
+    double sec;
 
     cout<<"1 : "<<"Secunde -> Minute"<<endl;
     cout<<"2 : "<<"Secunde -> Ore"<<endl;
@@ -995,7 +1225,7 @@ void ConvertorSecunde()
 void ConvertorMinute()
 {
     int x;
-    float min;
+    double min;
 
     cout<<"1 : "<<"Minute -> Secunde"<<endl;
     cout<<"2 : "<<"Minute -> Ore"<<endl;
@@ -1029,7 +1259,7 @@ void ConvertorMinute()
 void ConvertorOre()
 {
     int x;
-    float hour;
+    double hour;
 
     cout<<"1 : "<<"Ore -> Secunde"<<endl;
     cout<<"2 : "<<"Ore -> Minute"<<endl;
@@ -1064,7 +1294,7 @@ void ConvertorOre()
 void ConvertorZile()
 {
     int x;
-    float day;
+    double day;
 
     cout<<"1 : "<<"Zile -> Secunde"<<endl;
     cout<<"2 : "<<"Zile -> Minute"<<endl;
@@ -1129,27 +1359,27 @@ void Timp()
 
 }
 /////////////////////////////////////////////////////////////
-float KmhToMph(float kmh)
+double KmhToMph(double kmh)
 {
     return kmh / 1.609344;
 }
-float KmhToMs(float kmh)
+double KmhToMs(double kmh)
 {
     return kmh / 3.6;
 }
-float MphToMs(float mph)
+double MphToMs(double mph)
 {
     return mph * 0.44704;
 }
-float MphToKmh(float mph)
+double MphToKmh(double mph)
 {
     return mph * 1.609344;
 }
-float MsToMph(float ms)
+double MsToMph(double ms)
 {
     return ms * 2.237;
 }
-float MsToKmh(float ms)
+double MsToKmh(double ms)
 {
     return ms * 3.6;
 }
@@ -1157,7 +1387,7 @@ float MsToKmh(float ms)
 void ConvertorKmh()
 {
     int x;
-    float kmh;
+    double kmh;
 
     cout<<"1 : "<<"km/h -> mph"<<endl;
     cout<<"2 : "<<"km/h -> m/s"<<endl;
@@ -1184,7 +1414,7 @@ void ConvertorKmh()
 void ConvertorMs()
 {
     int x;
-    float ms;
+    double ms;
 
     cout<<"1 : "<<"m/s -> km/h"<<endl;
     cout<<"2 : "<<"m/s -> mph"<<endl;
@@ -1211,7 +1441,7 @@ void ConvertorMs()
 void ConvertorMph()
 {
     int x;
-    float mph;
+    double mph;
 
     cout<<"1 : "<<"mph -> km/h"<<endl;
     cout<<"2 : "<<"mph -> m/s"<<endl;
@@ -1266,71 +1496,71 @@ void Viteza()
 
 /////////////////////////////////////////////////////////////
 
-float CelsiusToFahrenheit(float celsius)
+double CelsiusToFahrenheit(double celsius)
 {
 
-    return celsius * (float)9/5 + 32;
+    return celsius * (double)9/5 + 32;
 }
 
-float CelsiusToKelvin(float celsius)
+double CelsiusToKelvin(double celsius)
 {
     return celsius + 273.15;
 }
 
-float CelsiusToRankine(float celsius)
+double CelsiusToRankine(double celsius)
 {
-    return (celsius + 273.15) * (float)9/5;
+    return (celsius + 273.15) * (double)9/5;
 }
 
-float FahrenheitToCelsius(float fahrenheit)
+double FahrenheitToCelsius(double fahrenheit)
 {
-    return (fahrenheit-32) * (float)5/9;
+    return (fahrenheit-32) * (double)5/9;
 }
 
-float FahrenheitToKelvin(float fahrenheit)
+double FahrenheitToKelvin(double fahrenheit)
 {
-    return (fahrenheit+459.67) * (float)5/9;
+    return (fahrenheit+459.67) * (double)5/9;
 }
 
-float FahrenheitToRankine(float fahrenheit)
+double FahrenheitToRankine(double fahrenheit)
 {
     return fahrenheit + 459.67;
 }
 
-float KelvinToCelsius(float kelvin)
+double KelvinToCelsius(double kelvin)
 {
     return kelvin - 273.15;
 }
 
-float KelvinToFahrenheit(float kelvin)
+double KelvinToFahrenheit(double kelvin)
 {
-    return kelvin * (float)9/5 - 459.67;
+    return kelvin * (double)9/5 - 459.67;
 }
 
-float KelvinToRankine(float kelvin)
+double KelvinToRankine(double kelvin)
 {
-    return kelvin * (float)9/5;
+    return kelvin * (double)9/5;
 }
 
-float RankineToCelsius(float rankine)
+double RankineToCelsius(double rankine)
 {
-    return (rankine - 491.67) * (float)5/9;
+    return (rankine - 491.67) * (double)5/9;
 }
 
-float RankineToFahrenheit(float rankine)
+double RankineToFahrenheit(double rankine)
 {
     return rankine - 459.67;
 }
 
-float RankineToKelvin(float rankine)
+double RankineToKelvin(double rankine)
 {
-    return rankine * (float)5/9;
+    return rankine * (double)5/9;
 }
 
 void ConvertorCelsius()
 {
     int x;
-    float celsius;
+    double celsius;
     cout<<"1 : "<<"Celsius -> Fahrenheit"<<endl;
     cout<<"2 : "<<"Celsius -> Kelvin"<<endl;
     cout<<"3 : "<<"Celsius -> Rankine"<<endl;
@@ -1362,7 +1592,7 @@ void ConvertorCelsius()
 void ConvertorKelvin()
 {
     int x;
-    float kelvin;
+    double kelvin;
 
     cout<<"1 : "<<"Kelvin -> Celsius"<<endl;
     cout<<"2 : "<<"Kelvin -> Fahrenheit"<<endl;
@@ -1399,7 +1629,7 @@ void ConvertorKelvin()
 void ConvertorFahrenheit()
 {
     int x;
-    float fahrenheit;
+    double fahrenheit;
 
     cout<<"1 : "<<"Fahrenheit -> Celsius"<<endl;
     cout<<"2 : "<<"Fahrenheit -> Kelvin"<<endl;
@@ -1432,7 +1662,7 @@ void ConvertorFahrenheit()
 void ConvertorRankine()
 {
     int x;
-    float rankine;
+    double rankine;
 
     cout<<"1 : "<<"Rankie -> Celsius"<<endl;
     cout<<"2 : "<<"Rankie -> Kelvin"<<endl;
@@ -1526,7 +1756,7 @@ long TToKg(long t)
 void ConvertorGrame()
 {
     int x;
-    float gr;
+    double gr;
 
     cout<<"1 : "<<"Grame -> Kilograme"<<endl;
     cout<<"2 : "<<"Grame -> Tone"<<endl;
@@ -1554,7 +1784,7 @@ void ConvertorGrame()
 void ConvertorKilograme()
 {
     int x;
-    float kg;
+    double kg;
 
     cout<<"1 : "<<"Kilograme -> Grame"<<endl;
     cout<<"2 : "<<"Kilograme -> Tone"<<endl;
@@ -1581,7 +1811,7 @@ void ConvertorKilograme()
 void ConvertorTone()
 {
     int x;
-    float t;
+    double t;
 
     cout<<"1 : "<<"Tone -> Grame"<<endl;
     cout<<"2 : "<<"Tone -> Kilograme"<<endl;
@@ -1635,27 +1865,27 @@ void Masa()
 
 }
 /////////////////////////////////////////////////
-float CalToJoule(float cal)
+double CalToJoule(double cal)
 {
     return cal * 4.184;
 }
-float CalToWatt(float cal)
+double CalToWatt(double cal)
 {
     return cal * 0.001163;
 }
-float JouleToCal(float joule)
+double JouleToCal(double joule)
 {
     return joule / 4.184;
 }
-float JouleToWatt(float joule)
+double JouleToWatt(double joule)
 {
     return joule / 3600;
 }
-float WattToCal(float watt)
+double WattToCal(double watt)
 {
     return watt * 859.8452278589854;
 }
-float WattToJoule(float watt)
+double WattToJoule(double watt)
 {
     return watt * 3600;
 }
@@ -1663,7 +1893,7 @@ float WattToJoule(float watt)
 void ConvertorCalorie()
 {
     int x;
-    float cal;
+    double cal;
 
     cout<<"1 : "<<"Calorii -> Joule"<<endl;
     cout<<"2 : "<<"Calorii -> Watt (ora)"<<endl;
@@ -1691,7 +1921,7 @@ void ConvertorCalorie()
 void ConvertorJoule()
 {
     int x;
-    float joule;
+    double joule;
 
     cout<<"1 : "<<"Joule -> Calorii"<<endl;
     cout<<"2 : "<<"Joule -> Watt (ora)"<<endl;
@@ -1718,7 +1948,7 @@ void ConvertorJoule()
 void ConvertorWatt()
 {
     int x;
-    float watt;
+    double watt;
 
     cout<<"1 : "<<"Watt (ora) -> Calorii"<<endl;
     cout<<"2 : "<<"Watt (ora) -> Joule"<<endl;
@@ -1772,17 +2002,17 @@ void Energie()
 
 }
 /////////////////////////////////////////////////
-float BarToPsi(float bar)
+double BarToPsi(double bar)
 {
     return bar * 14.5038;
 }
-float PsiToBar(float psi)
+double PsiToBar(double psi)
 {
     return psi * 0.0689475728 ;
 }
 void ConvertorBar()
 {
-    float bar;
+    double bar;
 
         cout<<"Dati valoarea: ";cin>>bar;
         cout<<endl;
@@ -1790,7 +2020,7 @@ void ConvertorBar()
 }
 void ConvertorPsi()
 {
-    float psi;
+    double psi;
 
         cout<<"Dati valoarea: ";cin>>psi;
         cout<<endl;
@@ -1820,14 +2050,19 @@ void Presiune()
 
 
 
-
-
 int main()
 {
-    int x;
+    int x,ok = 1;
+    char c;
+
+    loop:while(ok)
+{
+    cout<<fixed<<setprecision(15);
+
 
     cout<<"1 : "<<"Convertor Lungime"<<endl;
     cout<<"2 : "<<"Convertor Arie"<<endl;
+    cout<<"3 : "<<"Convertor Volum"<<endl;
     cout<<"4 : "<<"Convertor Timp"<<endl;
     cout<<"5 : "<<"Convertor Viteza"<<endl;
     cout<<"6 : "<<"Convertor Temperatura"<<endl;
@@ -1837,7 +2072,7 @@ int main()
 
     cout<<endl;
     cout<<"Operatia Dorita: ";
-    cin>>x;;
+    cin>>x;
 
     switch (x)
     {
@@ -1848,6 +2083,10 @@ int main()
     case 2:
         system("cls");
         Arie();
+        break;
+    case 3:
+        system("cls");
+        Volum();
         break;
     case 4:
         system("cls");
@@ -1875,5 +2114,28 @@ int main()
         break;
 
     }
+
+    cout<<endl<<endl;
+    cout<<"----------------------------------------------------------------------"<<endl;
+    cout<<"Tastati:"<<endl<<endl;
+
+        cout<<"a : "<<" Pentru Resetare"<<endl;
+        cout<<"Orice alta tasta pentru a inchide programul"<<endl;
+    cout<<"----------------------------------------------------------------------"<<endl;
+        cout<<endl<<endl;
+        cout<<"Selectati operatia dorita: "<<endl;;
+        cin>>c;
+
+        if(c == 'a')
+        {
+            system("cls");
+            goto loop;
+        }
+        else
+        {
+            system("cls");
+            ok = 0;
+        }
+}
     return 0;
 }

@@ -1,6 +1,8 @@
 # depslib dependency file v1.0
-1483977324 source:c:\users\remus\desktop\proiect\convertor\main.cpp
+1484074364 source:c:\users\remus\desktop\proiect\convertor\main.cpp
 	<iostream>
 	<stdlib.h>
 	<conio.h>
+	<string.h>
+	<iomanip>
 
