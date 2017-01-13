@@ -141,7 +141,7 @@ void ConvertorMetri()
     cout<<"5 : "<<"Metri -> Inch"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -187,7 +187,7 @@ void ConvertorCm()
     cout<<"5 : "<<"Centimetri -> Metri"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -235,7 +235,7 @@ void ConvertorMM()
     cout<<"5 : "<<"Milimetri -> Centimetri"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -283,7 +283,7 @@ void ConvertorFt()
     cout<<"5 : "<<"Feet -> Milimetri"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -329,7 +329,7 @@ void ConvertorKm()
     cout<<"5 : "<<"Kilometri -> Feet"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -377,7 +377,7 @@ void ConvertorInch()
     cout<<"5 : "<<"Inch -> Kilometri"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -429,7 +429,7 @@ void Lungime()
     cout<<"6 : "<<"Convertor Inch"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
 
     switch(x)
@@ -595,7 +595,7 @@ void ConvertorMetrip()
     cout<<"5 : "<<"Metri patrati -> Inch patrati"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -641,7 +641,7 @@ void ConvertorMMp()
     cout<<"5 : "<<"Milimetri patrati -> Centimetri patrati"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -688,7 +688,7 @@ void ConvertorCmp()
     cout<<"5 : "<<"Centimetri patrati -> Metri patrati"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -735,7 +735,7 @@ void ConvertorFtp()
     cout<<"5 : "<<"Feet patrati -> Milimetri patrati"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -781,7 +781,7 @@ void ConvertorKmp()
     cout<<"5 : "<<"Kilometri patrati -> Feet patrati"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -828,7 +828,7 @@ void ConvertorInchp()
     cout<<"5 : "<<"Inch patrati-> Kilometri patrati"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -876,7 +876,7 @@ void Arie()
     cout<<"6 : "<<"Convertor Inch patrati"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
 
     switch(x)
@@ -974,7 +974,7 @@ void ConvertorLitru()
     cout<<"3 : "<<"Litru-> MiliLitru"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1008,7 +1008,7 @@ void ConvertorDeciLitru()
     cout<<"3 : "<<"DeciLitru-> MiliLitru"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1041,7 +1041,7 @@ void ConvertorMiliLitru()
     cout<<"3 : "<<"MiliLitru -> DeciLitru"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1074,7 +1074,7 @@ void ConvertorMetruCub()
     cout<<"3 : "<<"Metri cub -> DeciLitru"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1111,7 +1111,7 @@ int x;
 
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
 
     switch(x)
@@ -1196,7 +1196,7 @@ void ConvertorSecunde()
     cout<<"3 : "<<"Secunde -> Zile"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1233,7 +1233,7 @@ void ConvertorMinute()
 
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;;
     cout<<"Dati valoarea: ";
 
@@ -1267,7 +1267,7 @@ void ConvertorOre()
 
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1301,7 +1301,7 @@ void ConvertorZile()
     cout<<"3 : "<<"Zile -> Ore"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1334,7 +1334,7 @@ void Timp()
     cout<<"4 : "<<"Convertor Zile"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
 
     switch(x)
@@ -1393,7 +1393,7 @@ void ConvertorKmh()
     cout<<"2 : "<<"km/h -> m/s"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1420,7 +1420,7 @@ void ConvertorMs()
     cout<<"2 : "<<"m/s -> mph"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1447,7 +1447,7 @@ void ConvertorMph()
     cout<<"2 : "<<"mph -> m/s"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1473,7 +1473,7 @@ void Viteza()
     cout<<"2 : "<<"Convertor mph"<<endl;
     cout<<"3 : "<<"Convertor m/s"<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
 
 
@@ -1565,7 +1565,7 @@ void ConvertorCelsius()
     cout<<"2 : "<<"Celsius -> Kelvin"<<endl;
     cout<<"3 : "<<"Celsius -> Rankine"<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1599,7 +1599,7 @@ void ConvertorKelvin()
     cout<<"3 : "<<"Kelvin -> Rankine"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1636,7 +1636,7 @@ void ConvertorFahrenheit()
     cout<<"3 : "<<"Fahrenheit -> Rankine"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1669,7 +1669,7 @@ void ConvertorRankine()
     cout<<"3 : "<<"Rankie -> Fahrenheit"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1703,7 +1703,7 @@ void Temperatura()
     cout<<"3 : "<<"Convertor Fahrenheit"<<endl;
     cout<<"4 : "<<"Convertor Rankine"<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
 
 
@@ -1762,7 +1762,7 @@ void ConvertorGrame()
     cout<<"2 : "<<"Grame -> Tone"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1790,7 +1790,7 @@ void ConvertorKilograme()
     cout<<"2 : "<<"Kilograme -> Tone"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1817,7 +1817,7 @@ void ConvertorTone()
     cout<<"2 : "<<"Tone -> Kilograme"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1843,7 +1843,7 @@ void Masa()
     cout<<"2 : "<<"Convertor Kilograme"<<endl;
     cout<<"3 : "<<"Convertor Tone"<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
 
 
@@ -1899,7 +1899,7 @@ void ConvertorCalorie()
     cout<<"2 : "<<"Calorii -> Watt (ora)"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1927,7 +1927,7 @@ void ConvertorJoule()
     cout<<"2 : "<<"Joule -> Watt (ora)"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1954,7 +1954,7 @@ void ConvertorWatt()
     cout<<"2 : "<<"Watt (ora) -> Joule"<<endl;
     cout<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
     cout<<"Dati valoarea: ";
 
@@ -1980,7 +1980,7 @@ void Energie()
     cout<<"2 : "<<"Convertor Joule"<<endl;
     cout<<"3 : "<<"Convertor Watt ora"<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
 
 
@@ -2032,7 +2032,7 @@ void Presiune()
     cout<<"1 : "<<"Convertor Bar -> Psi"<<endl;
     cout<<"2 : "<<"Convertor Psi -> Bar"<<endl;
 
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
 
 
@@ -2046,7 +2046,363 @@ void Presiune()
         break;
     }
 }
+/////////////////////////////////////////////////
 
+
+double GLToGm3(double gl)
+{
+    return gl * 1000;
+}
+double GLToKgL(double gl)
+{
+    return gl / 1000;
+}
+double GLToKgm3(double gl)
+{
+    return gl;
+}
+double Gm3ToGL(double gm3)
+{
+    return gm3 / 1000;
+}
+double Gm3ToKgL(double gm3)
+{
+    return gm3 / 1000000;
+}
+double Gm3ToKgm3(double gm3)
+{
+    return gm3 / 1000;
+}
+double KgLToGL(double kgl)
+{
+    return kgl * 1000;
+}
+double KgLToKgm3(double kgl)
+{
+    return kgl * 1000;
+}
+double KgLToGm3(double kgl)
+{
+    return kgl * 1000000;
+}
+double Kgm3ToGL(double kgm3)
+{
+    return kgm3;
+}
+double Kgm3ToKgL(double kgm3)
+{
+    return kgm3 / 1000;
+}
+double Kgm3ToGm3(double kgm3)
+{
+    return kgm3 * 1000;
+}
+
+void ConvertorGL()
+{
+    int x;
+    double gl;
+
+    cout<<"1 : "<<"grame/litru -> kilograme/litru"<<endl;
+    cout<<"2 : "<<"grame/litru -> kilograme/metru cub"<<endl;
+    cout<<"3 : "<<"grame/litru -> grame/metru cub"<<endl;
+    cout<<endl;
+
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>gl;
+        cout<<endl;
+        cout<<gl<<" grame/litru = "<<GLToKgL(gl)<<" kilograme/litru";
+        break;
+    case 2 :
+        cin>>gl;
+        cout<<endl;
+        cout<<gl<<" grame/litru = "<<GLToKgm3(gl)<<" kilograme/metru cub";
+        break;
+    case 3 :
+        cin>>gl;
+        cout<<endl;
+        cout<<gl<<" grame/litru = "<<GLToGm3(gl)<<" grame/metru cub";
+        break;
+    }
+
+}
+void ConvertorGm3()
+{
+    int x;
+    double gm3;
+
+    cout<<"1 : "<<"grame/metru cub -> kilograme/litru"<<endl;
+    cout<<"2 : "<<"grame/metru cub -> kilograme/metru cub"<<endl;
+    cout<<"3 : "<<"grame/metru cub -> grame/litri"<<endl;
+    cout<<endl;
+
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>gm3;
+        cout<<endl;
+        cout<<gm3<<" grame/metru cub = "<<Gm3ToKgL(gm3)<<" kilograme/litru";
+        break;
+    case 2 :
+        cin>>gm3;
+        cout<<endl;
+        cout<<gm3<<" grame/metru cub = "<<Gm3ToKgm3(gm3)<<" kilograme/metru cub";
+        break;
+    case 3 :
+        cin>>gm3;
+        cout<<endl;
+        cout<<gm3<<" grame/metru cub = "<<Gm3ToGL(gm3)<<" grame/litri";
+        break;
+    }
+}
+void ConvertorKgL()
+{
+    int x;
+    double kgl;
+
+    cout<<"1 : "<<"kilograme/litru -> grame/metru cub"<<endl;
+    cout<<"2 : "<<"kilograme/litru -> kilograme/metru cub"<<endl;
+    cout<<"3 : "<<"kilograme/litru -> grame/litri"<<endl;
+    cout<<endl;
+
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>kgl;
+        cout<<endl;
+        cout<<kgl<<" kilograme/litru = "<<KgLToGm3(kgl)<<" grame/metru cub";
+        break;
+    case 2 :
+        cin>>kgl;
+        cout<<endl;
+        cout<<kgl<<" kilograme/litru = "<<KgLToKgm3(kgl)<<" kilograme/metru cub";
+        break;
+    case 3 :
+        cin>>kgl;
+        cout<<endl;
+        cout<<kgl<<" kilograme/litru = "<<KgLToGL(kgl)<<" grame/litri";
+        break;
+    }
+
+}
+void ConvertorKgm3()
+{
+    int x;
+    double kgm3;
+
+    cout<<"1 : "<<"kilograme/metru cub -> grame/metru cub"<<endl;
+    cout<<"2 : "<<"kilograme/metru cub -> kilograme/litru"<<endl;
+    cout<<"3 : "<<"kilograme/metru cub -> grame/litri"<<endl;
+    cout<<endl;
+
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>kgm3;
+        cout<<endl;
+        cout<<kgm3<<" kilograme/metru cub = "<<Kgm3ToGm3(kgm3)<<" grame/metru cub";
+        break;
+    case 2 :
+        cin>>kgm3;
+        cout<<endl;
+        cout<<kgm3<<" kilograme/metru cub = "<<Kgm3ToKgL(kgm3)<<" kilograme/litru";
+        break;
+    case 3 :
+        cin>>kgm3;
+        cout<<endl;
+        cout<<kgm3<<" kilograme/metru cub = "<<Kgm3ToGL(kgm3)<<" grame/litri";
+        break;
+    }
+}
+
+
+void ConvertorDensitate()
+{
+    int x;
+    cout<<"1 : "<<"Convertor gram/litru"<<endl;
+    cout<<"2 : "<<"Convertor gram/metru cub"<<endl;
+    cout<<"3 : "<<"Convertor kilogram/l"<<endl;
+    cout<<"4 : "<<"Convertor kilogram/metru cub"<<endl;
+
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
+    cin>>x;
+
+
+    switch(x)
+    {
+    case 1 :
+        system("cls");
+        ConvertorGL();
+        break;
+    case 2 :
+        system("cls");
+        ConvertorGm3();
+        break;
+    case 3 :
+        system("cls");
+        ConvertorKgL();
+        break;
+
+    case 4 :
+        system("cls");
+        ConvertorKgm3();
+        break;
+    }
+
+}
+
+/////////////////////////////////////////////////
+double LKmToMGalon(double lkm)
+{
+    return 235.2 / lkm;
+}
+double LKmToKmL(double lkm)
+{
+    return 100 / lkm;
+}
+double KmLToLKm(double kml)
+{
+    return kml * 100;
+}
+double KmLToMGalon(double kml)
+{
+    return kml * 2.352;
+}
+double MGalonToKmL(double mgalon)
+{
+    return mgalon * 0.4251;
+}
+double MGalonToLKm(double mgalon)
+{
+    return mgalon * 235.2;
+}
+
+void ConvertorLKm()
+{
+    int x;
+    float lkm;
+    cout<<"1 : "<<"L/100km -> Mile/galon"<<endl;
+    cout<<"2 : "<<"L/100km -> Km/litru"<<endl;
+
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>lkm;
+        cout<<endl;
+        cout<<lkm<<" L/100km = "<<LKmToMGalon(lkm)<<" Mile/galon";
+        break;
+    case 2 :
+        cin>>lkm;
+        cout<<endl;
+        cout<<lkm<<" L/100km = "<<LKmToKmL(lkm)<<" Km/litru";
+        break;
+    }
+
+
+}
+void ConvertorKmL()
+{
+    int x;
+    float kml;
+    cout<<"1 : "<<"Km/litru -> Mile/galon"<<endl;
+    cout<<"2 : "<<"Km/litru -> L/100km"<<endl;
+
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>kml;
+        cout<<endl;
+        cout<<kml<<" Km/litru = "<<KmLToMGalon(kml)<<" Mile/galon";
+        break;
+    case 2 :
+        cin>>kml;
+        cout<<endl;
+        cout<<kml<<" Km/litru = "<<KmLToLKm(kml)<<" L/100km";
+        break;
+    }
+
+}
+void ConvertorMGalon()
+{
+    int x;
+    float mgalon;
+    cout<<"1 : "<<"Mile/galon -> Km/litru"<<endl;
+    cout<<"2 : "<<"Mile/galon -> L/100km"<<endl;
+
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
+    cin>>x;
+    cout<<"Dati valoarea: ";
+
+    switch(x)
+    {
+    case 1 :
+        cin>>mgalon;
+        cout<<endl;
+        cout<<mgalon<<" Mile/galon = "<<MGalonToKmL(mgalon)<<" Km/litru";
+        break;
+    case 2 :
+        cin>>mgalon;
+        cout<<endl;
+        cout<<mgalon<<" Mile/galon = "<<MGalonToLKm(mgalon)<<" L/100km";
+        break;
+    }
+
+}
+
+void Combustibil()
+{
+    int x;
+    cout<<"1 : "<<"Convertor L/100km"<<endl;
+    cout<<"2 : "<<"Convertor m/galon"<<endl;
+    cout<<"3 : "<<"Convertor km/l"<<endl;
+
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
+    cin>>x;
+
+
+    switch(x)
+    {
+    case 1 :
+        system("cls");
+        ConvertorLKm();
+        break;
+    case 2 :
+        system("cls");
+        ConvertorMGalon();
+        break;
+    case 3 :
+        system("cls");
+        ConvertorKmL();
+        break;
+    }
+
+}
 
 
 
@@ -2060,6 +2416,7 @@ int main()
     cout<<fixed<<setprecision(15);
 
 
+
     cout<<"1 : "<<"Convertor Lungime"<<endl;
     cout<<"2 : "<<"Convertor Arie"<<endl;
     cout<<"3 : "<<"Convertor Volum"<<endl;
@@ -2069,9 +2426,11 @@ int main()
     cout<<"7 : "<<"Convertor Masa"<<endl;
     cout<<"8 : "<<"Convertor Energie"<<endl;
     cout<<"9 : "<<"Convertor Presiune"<<endl;
+    cout<<"10 : "<<"Convertor Densitate"<<endl;
+    cout<<"11 : "<<"Convertor Combustibil"<<endl;
 
     cout<<endl;
-    cout<<"Operatia Dorita: ";
+    cout<<"Tastati numarul corespunzator operatiei dorite: ";
     cin>>x;
 
     switch (x)
@@ -2112,6 +2471,14 @@ int main()
         system("cls");
         Presiune();
         break;
+    case 10 :
+        system("cls");
+        ConvertorDensitate();
+        break;
+    case 11 :
+        system("cls");
+        Combustibil();
+        break;
 
     }
 
@@ -2120,8 +2487,8 @@ int main()
     cout<<"Tastati:"<<endl<<endl;
 
         cout<<"a : "<<" Pentru Resetare"<<endl;
-        cout<<"Orice alta tasta pentru a inchide programul"<<endl;
-    cout<<"----------------------------------------------------------------------"<<endl;
+        cout<<"Orice alta tasta: Pentru a inchide programul"<<endl;
+   // cout<<"----------------------------------------------------------------------"<<endl;
         cout<<endl<<endl;
         cout<<"Selectati operatia dorita: "<<endl;;
         cin>>c;
